@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for your time</p>
+            </section>
+            <form id="survey-form" class="form-content">
+                <div>
+                    <label id="name-label" for="name">User name:</label>
+                    <input id="name" name="name" type="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Your Age:</label>
+                    <input id="number" name="age" type="number" min="10" max="80" placeholder="Age" required>
+                </div>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option>Student</option>
+                    <option>Graduate</option>
+                </select>
+                <div>
+                    <label>
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <input name="user-recommend" class="input-radio" type="radio" value="maybe" /> 
+                        Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" class="input-radio" type="radio" value="not" />
+                        Not sure
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>What would you like to see improved?</p>
+                        <input id="Front-end" name="front" type="checkbox" value="1"/> Front-end
+                        <input id="Back-end" name="back" type="checkbox" value="2"/> Back-end
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Any comments or suggestions?</p>
+                        <textarea class="input-textarea" id="comments" name="comment" placeholder="write us about this..."></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" id="submit" class="submit-botton">Submit</botton>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
